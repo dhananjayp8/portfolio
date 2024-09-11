@@ -93,12 +93,100 @@ body {
 .btn:hover {
   background-color: #ff4b4b;
 }
+
+#skills-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.section-skills {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+.section-skills > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.section-skills > ul > li {
+  margin: 0 2rem;
+}
+.section-skills > ul > li > i {
+  font-size: 3rem;
+}
+/* 
+.coding-profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.coding-profile > ul {
+  display: flex;
+  justify-content: center;
+}
+.coding-profile > ul > li {
+  top: 15px;
+  background-color: #edf2f4;
+}
+#leetcode {
+  width: 3rem;
+  height: 2.3rem;
+}
+.coding-profile > ul > li > a > img {
+  top: 20px;
+} */
+#coding-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.coding-profile {
+  display: flex;
+  justify-content: center;
+  /* background-color: #edf2f4; */
+  width: 70%;
+  margin: 2rem auto;
+}
+.platform-icons {
+  /* display: flex;
+  justify-content: space-between;  */
+  /* Space between the icons */ /* Set a width to control spacing */
+  align-items: center; /* Vertically center icons */
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #edf2f4; */
+  /* margin: 2rem 4rem; */
+  margin-left: 3rem;
+  padding: 2px;
+  /* justify-content: center; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-container img {
+  width: 80px; /* Adjust the size of the icons */
+  height: auto;
+}
+
+.icon-container p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*  */
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 0;
     width: 100%;
     flex-direction: column;
@@ -118,5 +206,34 @@ body {
 
   .nav-links.active {
     display: flex;
+  }
+  .about {
+    margin-top: 3rem;
+  }
+  #heading {
+    font-size: 2rem;
+    position: absolute;
+    top: 21rem;
+    left: 12rem;
+
+    /* margin-top: 8rem;
+    margin-bottom: 2rem; */
+  }
+
+  .section-about {
+    display: block;
+    justify-content: center;
+    margin-top: 19rem;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+  }
+  .skills-heading {
+    font-size: 2rem;
+  }
+  .section-skills > ul > li {
+    margin: 0 1rem;
+  }
+  .section-skills > ul > li > i {
+    font-size: 1.5rem;
   }
 }
