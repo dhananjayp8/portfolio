@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #000814;
-  color: #edf2f4;
+  /* background-color: #000814; */
+  color: black;
 }
 body {
   font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #333; */
+  background-color: burlywood;
   padding: 15px;
   /* border-bottom: 1px solid #edf2f4; */
 }
@@ -54,7 +54,8 @@ body {
 }
 /* Main */
 .about {
-  margin-top: 4rem;
+  background-color: #bfc0c0;
+  padding: 2rem;
 }
 .section-about {
   width: 80%;
@@ -71,12 +72,18 @@ body {
   width: 55%;
   margin-left: 4rem;
 }
+.desc-para {
+  text-align: left;
+}
 .section-about .desc {
   margin-top: 3rem;
   margin-left: 5rem;
   font-size: 1.5rem;
   width: 50%;
   text-align: center;
+}
+.desc > h1 {
+  text-align: left;
 }
 .btn {
   padding: 10px 20px;
@@ -115,6 +122,7 @@ body {
 .section-skills > ul > li > i {
   font-size: 3rem;
 }
+/*  */
 /* 
 .coding-profile {
   position: relative;
@@ -179,7 +187,12 @@ body {
   font-weight: bold;
   text-align: center;
 }
-
+.project > h1 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
 .project-container {
   width: 80%;
   margin: 1rem auto;
@@ -191,6 +204,7 @@ body {
   width: 15rem;
   height: 16rem;
   background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
   border-radius: 12px;
 }
@@ -219,6 +233,51 @@ body {
   font-size: 1rem;
   font-weight: 600;
 }
+.social {
+  margin: 2rem;
+}
+.social-container {
+  width: 85%;
+  margin: 2rem auto;
+}
+.social-container > h1 {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons > ul > li {
+  margin: 0 2rem;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #d5e6ec;
+}
+
+.social-icons > ul > li > a > i {
+  font-size: 2rem;
+}
+.social-icons > ul > li > a > i {
+  transform: scale(1.05);
+  transition: opacity 0.3s ease;
+}
+
+footer {
+  background-color: #e0e1dd;
+  padding: 2rem;
+}
+footer > h2 {
+  text-align: center;
+}
+
 /*  */
 /* Media query for mobile devices */
 @media (max-width: 768px) {
@@ -246,9 +305,7 @@ body {
   .nav-links.active {
     display: flex;
   }
-  .about {
-    margin-top: 3rem;
-  }
+
   #heading {
     font-size: 2rem;
     position: absolute;
