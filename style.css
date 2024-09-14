@@ -1,21 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   /* background-color: #000814; */
-  color: black;
+  /* color: black; */
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: Arial, sans-serif;
+  background-color: #bfc0c0;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: burlywood;
+  background-color: #22223b;
   padding: 15px;
   /* border-bottom: 1px solid #edf2f4; */
 }
@@ -57,23 +63,34 @@ body {
 }
 /* Main */
 .about {
-  background-color: #bfc0c0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/blog-writing.png");
+  /* Set a specific height */
+  height: 50%;
+  color: #fff;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   padding: 2rem;
 }
 .section-about {
   width: 80%;
   margin-top: 1rem auto;
   display: flex;
-  justify-content: space-between;
+  color: #fff;
+  justify-content: center;
 }
 #heading {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 3rem;
+  font-weight: 600;
 }
-.section-about .logo {
-  width: 55%;
-  margin-left: 4rem;
+.desc {
+  margin-left: 2.5rem;
+  text-align: center;
 }
 .desc-para {
   text-align: left;
@@ -88,7 +105,7 @@ body {
 .desc > h1 {
   text-align: left;
 }
-.btn {
+.btn-link {
   padding: 10px 20px;
   background-color: #ff6b6b;
   color: white;
@@ -96,10 +113,12 @@ body {
   border-radius: 5px;
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 .btn-link {
   margin-top: 3rem;
 }
+
 .btn:hover {
   background-color: #ff4b4b;
 }
@@ -214,7 +233,7 @@ body {
   font-weight: bold;
 }
 .project-container {
-  width: 80%;
+  width: 77%;
   margin: 1rem auto;
   display: flex;
   flex-wrap: wrap;
@@ -296,11 +315,13 @@ body {
 } */
 
 footer {
-  background-color: #e0e1dd;
+  background-color: #22223b;
+
   padding: 2rem;
 }
 footer > h2 {
   text-align: center;
+  color: #fff;
 }
 
 /*  */
@@ -358,6 +379,17 @@ footer > h2 {
     font-size: 1.5rem;
   }
   .project-container {
-    margin: 0 10rem;
+    margin: 0 13rem;
+  }
+  .btn-link {
+    width: 6rem;
+    padding: 7px;
+  }
+  #heading {
+    margin-bottom: 2rem;
+  }
+  .desc {
+    margin-top: 2rem;
+    font-size: 1rem;
   }
 }
