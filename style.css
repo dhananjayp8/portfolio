@@ -127,6 +127,7 @@ body {
   font-size: 3rem;
   text-align: center;
   margin-top: 3rem;
+  font-weight: 700;
 }
 .section-skills {
   width: 90%;
@@ -155,9 +156,11 @@ body {
 }
 
 #coding-heading {
-  font-size: 3rem;
+  font-size: 1.6rem;
   text-align: center;
+  font-weight: 600;
   margin-top: 3rem;
+  text-decoration: underline;
 }
 .coding-profile {
   display: flex;
@@ -165,6 +168,13 @@ body {
   /* background-color: #edf2f4; */
   width: 70%;
   margin: 2rem auto;
+}
+#sub-heading {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: underline;
 }
 .platform-icons {
   /* display: flex;
@@ -207,8 +217,8 @@ body {
 .project > h1 {
   text-align: center;
   padding: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 700;
 }
 .project-container {
   width: 77%;
@@ -345,7 +355,17 @@ footer > h2 {
     justify-content: center;
     margin-top: 19rem;
     margin-left: 5rem;
-    font-size: 1.5rem;
+  }
+  #heading {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .desc > h1 {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+  .desc-para {
+    font-size: 1.3rem;
   }
   .skills-heading {
     font-size: 2rem;
@@ -362,12 +382,11 @@ footer > h2 {
   .btn-link {
     width: 6rem;
     padding: 7px;
-  }
-  #heading {
     margin-bottom: 2rem;
   }
-  .desc {
-    margin-top: 2rem;
+
+  .desc > h1 {
+    margin-top: 3rem;
     font-size: 1rem;
   }
 }
