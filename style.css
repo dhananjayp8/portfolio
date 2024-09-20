@@ -46,18 +46,13 @@ body {
   font-size: 18px;
 }
 
-.hamburger {
+.menu-toggle {
   display: none;
-  flex-direction: column;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
   cursor: pointer;
-}
-
-.hamburger span {
-  height: 3px;
-  width: 25px;
-  background-color: #fff;
-  margin: 4px;
-  transition: 0.3s;
 }
 /* Main */
 .about {
@@ -65,14 +60,13 @@ body {
     url("./images/blog-writing.png");
   /* Set a specific height */
   width: 100%;
-  height: 30rem;
+  height: 40rem;
   color: #fff;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 2rem;
 }
 .desc {
   text-align: center;
@@ -80,10 +74,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 2rem;
+  margin-top: 1.55rem;
+}
+.desc .heading {
+  display: none;
 }
 .desc > h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .desc > p {
@@ -108,6 +105,7 @@ body {
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
+  margin-top: 5rem;
 }
 
 #skills-heading {
@@ -136,6 +134,8 @@ body {
 .section-skills > ul > li:hover {
   transform: scale(1.05);
   transition: opacity 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #bcd9e3;
 }
 
 .section-skills > ul > li > i {
@@ -184,6 +184,7 @@ body {
   border-radius: 50%;
   padding: 30px;
   cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .icon-container :hover {
   transform: scale(1.05);
@@ -281,13 +282,11 @@ body {
   transform: scale(1.05);
   transition: opacity 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #4d5864;
 }
 .social-icons > ul > li > a > i {
   font-size: 2rem;
 }
-/* .social-icons > ul > li > a > i {
-  
-} */
 
 footer {
   background-color: #22223b;
@@ -304,30 +303,33 @@ footer > h2 {
 @media (max-width: 768px) {
   .nav-links {
     display: none;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
     flex-direction: column;
+    border-top: 1px solid #fff;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background-color: #22223b;
+    z-index: 1;
+  }
+
+  .nav-links.active {
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 
   .nav-links li {
     margin: 15px 0;
   }
+
   .nav-links li:hover {
     text-decoration: underline;
+    color: #fff;
   }
 
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  #heading {
+  /* #heading {
     font-size: 2rem;
     position: absolute;
     top: 21rem;
@@ -335,19 +337,7 @@ footer > h2 {
 
     /* margin-top: 8rem;
     margin-bottom: 2rem; */
-  }
-
-  .section-about {
-    display: block;
-    justify-content: center;
-    margin-top: 19rem;
-    margin-left: 5rem;
-  }
-  #heading {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  .desc > h1 {
+  */ .desc > h1 {
     margin-top: 2rem;
     font-size: 1rem;
   }
@@ -371,9 +361,20 @@ footer > h2 {
     padding: 7px;
     margin-bottom: 2rem;
   }
-
+  .menu-toggle {
+    display: block;
+  }
+  .desc {
+    margin-top: 6rem;
+  }
+  .desc .heading {
+    display: block;
+  }
   .desc > h1 {
-    margin-top: 3rem;
-    font-size: 1rem;
+    margin-top: 2.2rem;
+    font-size: 1.8rem;
+  }
+  .desc > p {
+    font-size: 1.2rem;
   }
 }
